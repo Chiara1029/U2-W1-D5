@@ -177,8 +177,10 @@ main{
 
 /*ARTICLES*/
 .second-section{
-    width: 50%;
-    display: inline-block;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     margin-top: 3em;
 }
 .underline{
@@ -187,8 +189,11 @@ main{
     justify-content: space-between;
     align-items:center ;
 }
+.article-list{
+    width: 600px;
+}
 .card{
-    width: 650px;
+    width: 100%;
     height: 180px;
     display: flex;
     flex-direction: row;
@@ -251,10 +256,11 @@ main{
 
 
 /*ASIDE*/
-.aside{
-    width: 30%;
-    display: inline-block;
+.aside-sticky{
+    width: 400px;
+    align-items: flex-start;
     position: sticky;
+    top: 0;
 }
 .tag-buttons{
     display: flex;
@@ -262,15 +268,15 @@ main{
     gap: 10px;
 }
 .tag-buttons a{
-    border: solid 1px lightgrey;
+    border: solid 1px grey;
     text-decoration: none;
-    color: lightgray;
+    color: gray;
     padding: 8px;
     font-size: 0.8em;
     display: inline-block;
 }
 .other-links a{
-    color: lightgrey;
+    color: grey;
     text-decoration: none;
     font-size: 0.8em;
 }
